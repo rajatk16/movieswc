@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script type="module" src="movielist.js"></script>
+  </head>
+  <body>
+    <movie-list></movie-list>
+  </body>
+  <script>
+    const app = document.querySelector('movie-list')
+    import('./movielist.js').then(() => {
+      app.movies = [
+        {title: 'Avengers', date: 'April 26'}
+      ]
+    })
+  </script>
+</html>
